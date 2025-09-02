@@ -6,10 +6,11 @@
 // Red
 // Green,White
 // Red,Green,White,Black,orange 
+document.write(" <b>1. Write a simple JavaScript program to print expected Output using following arraySample array : myColor = ['Red', 'Green', 'White', 'Black'];>Red,Green,White,Black<br/>Red+Green+White+Black<br/>Red,Green,White<br/>Red<br/>Green,White<br/>Red,Green,White,Black,orange</b>");
 
 let myColor = ["Red", "Green", "White", "Black"];
 
-document.write(myColor);
+document.write("<br/><b>Ans :-</b><br/>"+myColor);
 document.write("<br/>");
 document.write(myColor.join('+'));
 document.write("<br/>");
@@ -24,7 +25,7 @@ document.write(myColor);
 
 document.write("<br/><br/>");
 
-//2. Write a JavaScript program to get sum of all array element using for loop and foreach loop.
+document.write(" <b>2. Write a JavaScript program to get sum of all array element using for loop and foreach loop.</b><br/><b>Ans:-</b><br/>");
 
 let array = [1,2,3,4,5,6,7,8,9];
 let sum = 0,sum2 = 0;
@@ -42,7 +43,8 @@ document.write("With Foreach loop :- "+sum2);
 
 document.write("<br/><br/>");
 
-// 3.Write a JavaScript program to print a maximum and minimum value of given array.(using function and logic)
+document.write(" <b>3.Write a JavaScript program to print a maximum and minimum value of given array.(using function and logic)</b><br/><b>Ans:-</b><br/>");
+
 let array2 = [4,2,6,4,7,8];
 function mini_max(){
     let min = array2[0];
@@ -62,7 +64,8 @@ mini_max();
 
 document.write("<br/><br/>");
 
-// 4.Write a JavaScript program for convert all array element in ASCII value.
+document.write(" <b>4.Write a JavaScript program for convert all array element in ASCII value.</b><br/><b>Ans:-</b><br/>");
+// 
 
 let chars = ['A','B','c','4'];
 document.write("Original Array :- "+chars+"<br/>");
@@ -73,8 +76,7 @@ document.write("ASCII value :- "+chars);
 
 document.write("<br/><br/>");
 
-// 5.Write a JavaScript program for remove negative values using the filter array function.
-// numbers = [-23,-20,-17, -12, -5, 0, 1, 5, 12, 19, 20];
+document.write(" <b>5.Write a JavaScript program for remove negative values using the filter array function. numbers = [-23,-20,-17, -12, -5, 0, 1, 5, 12, 19, 20];</b><br/><b>Ans:-</b><br/>");
 
 let numbers = [-23,-20,-17, -12, -5, 0, 1, 5, 12, 19, 20];
 
@@ -85,8 +87,7 @@ document.write("Positive Numbers:- "+ result);
 
 document.write("<br/><br/>");
 
-//6. Write a JavaScript program using array map() method and return the square of array element.
-// arr = [2, 5, 6, 3, 8, 9];
+document.write(" <b>6. Write a JavaScript program using array map() method and return the square of array element. arr = [2, 5, 6, 3, 8, 9];</b><br/><b>Ans:-</b><br/>");
 
 let Array = [2,5,6,3,8,9];
 
@@ -95,17 +96,21 @@ document.write("Square of array element :- "+square);
 
 document.write("<br/><br/>");
 
-//7.Write a JavaScript program for sort array in ascending descending.
-//numbers = [23,20,17, 12,5, 0, 1, 5, 12, 19, 20];
+document.write(" <b>7.Write a JavaScript program for sort array in ascending descending.numbers = [23,20,17, 12,5, 0, 1, 5, 12, 19, 20];</b><br/><b>Ans:-</b><br/>");
 
 let sort = [23, 20, 17, 12, 5, 0, 1, 5, 12, 19, 20];
-sort.sort();
-document.write(sort);
+let ass = [...sort].sort(function(a,b){
+    return a-b;
+});
+let dis = [...sort].sort(function(a,b){
+    return b-a;
+});
+document.write(ass+"<br/>");
+document.write(dis);
 
 document.write("<br/><br/>");
 
-//8. Write a JavaScript program which filters out any string which is less than 8 characters. 
-//words = ['Python', 'Javascript', 'Go', 'Java', 'PHP', 'Ruby'];
+document.write(" <b>8. Write a JavaScript program which filters out any string which is less than 8 characters. words = ['Python', 'Javascript', 'Go', 'Java', 'PHP', 'Ruby'];</b><br/><b>Ans:-</b><br/>");
 
 let Arr = ['Python', 'Javascript', 'Go', 'Java', 'PHP', 'Ruby'];
 
@@ -116,11 +121,7 @@ document.write(res);
 
 document.write("<br/><br/>");
 
-//9. write a JavaScript program to  to print expected output for following string.
-//x = "airplane";    output:- r
-//x = "oxoxoxox";   output:- "oXoXoXoX"
-//x = "A New Java Book";   
-//output:-  "a new java book" , "A NEW JAVA BOOK"
+document.write(" <b>9. write a JavaScript program to  to print expected output for following string.<br/>x = 'airplane';    output:- r <br/> x = 'oxoxoxox';   output:- 'oXoXoXoX'<br/>x = 'A New Java Book';  <br/> output:-  'a new java book' , 'A NEW JAVA BOOK'</b><br/><b>Ans:-</b><br/>");
 
 
 let A = "airplane";
@@ -130,7 +131,6 @@ document.write(A.charAt(2));
 document.write("<br/>");
 
 let B = "oxoxoxox";
-let r = "";
 for(i=0;i<B.length;i++){
     if(i%2===0){
         document.write(B[i].toLowerCase());
@@ -145,7 +145,7 @@ document.write(C.toUpperCase());
 
 document.write("<br/><br/>");
 
-//10. write a JavaScript program for array reverse.
+document.write(" <b>10. write a JavaScript program for array reverse.</b><br/><b>Ans:-</b><br/>");
 
 let a = ["a","b","1",2];
 
@@ -154,23 +154,22 @@ document.write(reverse);
 
 document.write("<br/><br/>");
 
-//11. write a JavaScript program for check value is found or not?
+document.write(" <b>11. write a JavaScript program for check value is found or not?</b><br/><b>Ans:-</b><br/>");
 
 let arr = [10,20,30,40];
 document.write(arr.includes(10));
 
 document.write("<br/><br/>");
 
-//12. write a JavaScript program for print your name and write the no of total character.
-
+document.write(" <b>12. write a JavaScript program for print your name and write the no of total character.</b><br/><b>Ans:-</b><br/>");
 let name = "varun";
+document.write(name+"<br/>");
 document.write(name.length);
 
 document.write("<br/><br/>");
 
-//13.  write a JavaScript program given this output using replace concept.
-//Input : - "I often take a walk with my dog in the evening. His dog follows him everywhere. I don't feed my dog in the morning";
-//Output:-  "I often take a walk with my cat in the evening. His cat follows him everywhere. I don't feed my cat in the morning"
+document.write(' <b>13.  write a JavaScript program given this output using replace concept.<br/>Input : - "I often take a walk with my dog in the evening. His dog follows him everywhere. I do not feed my dog in the morning";<br/>Output:-  "I often take a walk with my cat in the evening. His cat follows him everywhere. I do not feed my cat in the morning";</b><br/><b>Ans:-</b><br/>');
+
 
 let str = "I often take a walk with my dog in the evening. His dog follows him everywhere. I don't feed my dog in the morning";
 document.write(str+"<br/>");
@@ -179,9 +178,7 @@ document.write(re);
 
 document.write("<br/><br/>");
 
-//14.  write a JavaScript program convert string to array.
-//Input :- "Hire the top 1% freelance developers";
-//Output :- ["Hire", "the", "top", "1%"] 
+document.write(' <b>14.  write a JavaScript program convert string to array.<br/>Input :- "Hire the top 1% freelance developers";<br/>Output :- ["Hire", "the", "top", "1%"]; </b><br/><b>Ans:-</b><br/>');
 
 let s = "Hire the top 1% freelance developers";
 let sp = s.split(" ").slice(0,4);
@@ -189,10 +186,7 @@ document.write("["+sp+"]");
 
 document.write("<br/><br/>");
 
-//15. write a JavaScript program convert for array to string.
-//Input:- ['5', 32, 'Daniel'];
-//Output: 5,32,Daniel
-
+document.write(" <b>15. write a JavaScript program convert for array to string.<br/>Input:- ['5', 32, 'Daniel'];<br/>Output: 5,32,Daniel </b><br/><b>Ans:-</b><br/>");
 let ar = ['5', 32, 'Daniel'];
 document.write(ar.join(','));
 
